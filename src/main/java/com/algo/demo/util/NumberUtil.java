@@ -13,6 +13,11 @@ public class NumberUtil {
     }
 
 
+    public static int genInteger(int min, int max) {
+        return random.nextInt(max-min)+ min;
+    }
+
+
     public static int[] genIntegerArr(int len, int min, int max) {
         int[] arr = new int[len];
 
