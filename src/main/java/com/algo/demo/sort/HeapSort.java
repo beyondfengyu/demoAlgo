@@ -2,6 +2,11 @@ package com.algo.demo.sort;
 
 import java.util.Arrays;
 
+/**
+ * 堆排序
+ * 时间复杂度：O(nlogn)
+ * 稳定性： 不稳定
+ */
 public class HeapSort extends BaseSort {
 
     private int heapSize;

@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public abstract class BaseSort implements Sort{
 
+    public int[] sort(int[] socArr, int lIx, int rIx) {
+        return Arrays.copyOf(socArr, socArr.length);
+    }
 
 
     public void swapPrint(int[] socArr, boolean printArr) {

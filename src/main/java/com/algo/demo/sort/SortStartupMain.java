@@ -12,7 +12,7 @@ public class SortStartupMain {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
             System.out.println((i + 1) + "、============================");
-            int[] socArr = NumberUtil.genIntegerArr(10000000, 1, 300000);
+            int[] socArr = NumberUtil.genIntegerArr(30000000, 1, 200000000);
 //            int[] socArr = {3, 7, 2, 11, 3, 4, 9, 2, 18, 0};
 //            // 选择排序，注意数组长度不要太大，否则耗时很长
 //            int[] selectArr = Arrays.copyOf(socArr, socArr.length);
@@ -31,12 +31,16 @@ public class SortStartupMain {
 //            InsertSort insertSort = new InsertSort();
 //            insertSort.swapPrint(insertArr, false);
 //
-            // 归并排序
-            int[] mergeArr = Arrays.copyOf(socArr, socArr.length);
-            MergeSort mergeSort = new MergeSort();
-            mergeSort.swapPrint(mergeArr, false);
 
-            // 快速排序，建议数组元素范围放大点，比如：[1-1000000]
+            int[] shellArr = Arrays.copyOf(socArr, socArr.length);
+            ShellSort shellSort = new ShellSort();
+            shellSort.swapPrint(shellArr, false);
+//            // 归并排序
+//            int[] mergeArr = Arrays.copyOf(socArr, socArr.length);
+//            MergeSort mergeSort = new MergeSort();
+//            mergeSort.swapPrint(mergeArr, false);
+//
+//            // 快速排序，建议数组元素范围放大点，比如：[1-1000000]
             int[] quickArr = Arrays.copyOf(socArr, socArr.length);
             QuickSort quickSort = new QuickSort();
             quickSort.swapPrint(quickArr, false);
