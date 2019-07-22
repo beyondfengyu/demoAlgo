@@ -1,8 +1,10 @@
 package com.algo.demo.sort;
 
+
 /**
  * 冒泡排序
  * 时间复杂度：O(n^2)
+ * 稳定性：稳定
  */
 public class BubbleSort extends BaseSort {
     
@@ -31,4 +33,6 @@ public class BubbleSort extends BaseSort {
 
         return socArr;
     }
+
+
 }

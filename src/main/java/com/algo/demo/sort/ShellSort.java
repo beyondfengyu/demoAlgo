@@ -2,7 +2,7 @@ package com.algo.demo.sort;
 
 
 /**
- * 希尔排序
+ * 希尔排序 - 改进版的插入排序
  * 时间复杂度：
  * 稳定性：不稳定
  */
@@ -27,6 +27,7 @@ public class ShellSort extends BaseSort {
     }
 
     /**
+     *  进行插入排序
      *
      * @param socArr
      * @param start

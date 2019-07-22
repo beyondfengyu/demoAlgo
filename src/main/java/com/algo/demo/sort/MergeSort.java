@@ -53,7 +53,6 @@ public class MergeSort extends BaseSort {
         while (rp <= rIx) {
             tmpArr[sp++] = socArr[rp++];
         }
-
         // 把合并好的元素复制到原来的数组
         for (int i = 0; i < tmpArr.length; i++) {
             socArr[i + lIx] = tmpArr[i];
